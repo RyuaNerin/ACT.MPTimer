@@ -109,15 +109,15 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 258);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.Size = new System.Drawing.Size(65, 15);
             this.label5.TabIndex = 11;
-            this.label5.Text = "透過率";
+            this.label5.Text = "투명도 (%)";
             // 
             // TokaRitsuNumericUpDown
             // 
-            this.TokaRitsuNumericUpDown.Location = new System.Drawing.Point(163, 254);
+            this.TokaRitsuNumericUpDown.Location = new System.Drawing.Point(190, 254);
             this.TokaRitsuNumericUpDown.Name = "TokaRitsuNumericUpDown";
-            this.TokaRitsuNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.TokaRitsuNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.TokaRitsuNumericUpDown.TabIndex = 6;
             this.TokaRitsuNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TokaRitsuNumericUpDown.Value = new decimal(new int[] {
@@ -128,21 +128,21 @@
             // 
             // ShokikaButton
             // 
-            this.ShokikaButton.Location = new System.Drawing.Point(5, 408);
+            this.ShokikaButton.Location = new System.Drawing.Point(6, 408);
             this.ShokikaButton.Name = "ShokikaButton";
-            this.ShokikaButton.Size = new System.Drawing.Size(68, 23);
+            this.ShokikaButton.Size = new System.Drawing.Size(79, 23);
             this.ShokikaButton.TabIndex = 13;
-            this.ShokikaButton.Text = "初期化";
+            this.ShokikaButton.Text = "초기화";
             this.ShokikaButton.UseVisualStyleBackColor = true;
             // 
             // CountInCombatCheckBox
             // 
             this.CountInCombatCheckBox.AutoSize = true;
-            this.CountInCombatCheckBox.Location = new System.Drawing.Point(163, 279);
+            this.CountInCombatCheckBox.Location = new System.Drawing.Point(190, 279);
             this.CountInCombatCheckBox.Name = "CountInCombatCheckBox";
-            this.CountInCombatCheckBox.Size = new System.Drawing.Size(48, 16);
+            this.CountInCombatCheckBox.Size = new System.Drawing.Size(50, 19);
             this.CountInCombatCheckBox.TabIndex = 7;
-            this.CountInCombatCheckBox.Text = "有効";
+            this.CountInCombatCheckBox.Text = "사용";
             this.CountInCombatCheckBox.UseVisualStyleBackColor = true;
             // 
             // label6
@@ -150,92 +150,92 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 283);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 12);
+            this.label6.Size = new System.Drawing.Size(99, 15);
             this.label6.TabIndex = 15;
-            this.label6.Text = "戦闘中のみ稼働させる";
+            this.label6.Text = "전투 중에만 사용";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 329);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 12);
+            this.label7.Size = new System.Drawing.Size(111, 15);
             this.label7.TabIndex = 16;
-            this.label7.Text = "特定ジョブのとき稼働させる";
+            this.label7.Text = "특정 직업에만 사용";
             // 
             // TargetJobComboBox
             // 
             this.TargetJobComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TargetJobComboBox.FormattingEnabled = true;
-            this.TargetJobComboBox.Location = new System.Drawing.Point(163, 326);
+            this.TargetJobComboBox.Location = new System.Drawing.Point(190, 326);
             this.TargetJobComboBox.Name = "TargetJobComboBox";
-            this.TargetJobComboBox.Size = new System.Drawing.Size(216, 20);
+            this.TargetJobComboBox.Size = new System.Drawing.Size(251, 23);
             this.TargetJobComboBox.TabIndex = 9;
             // 
             // CountInCombatNumericUpDown
             // 
             this.CountInCombatNumericUpDown.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.CountInCombatNumericUpDown.Location = new System.Drawing.Point(163, 301);
+            this.CountInCombatNumericUpDown.Location = new System.Drawing.Point(190, 301);
             this.CountInCombatNumericUpDown.Maximum = new decimal(new int[] {
             3600,
             0,
             0,
             0});
             this.CountInCombatNumericUpDown.Name = "CountInCombatNumericUpDown";
-            this.CountInCombatNumericUpDown.Size = new System.Drawing.Size(63, 19);
+            this.CountInCombatNumericUpDown.Size = new System.Drawing.Size(73, 23);
             this.CountInCombatNumericUpDown.TabIndex = 8;
             this.CountInCombatNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(232, 303);
+            this.label8.Location = new System.Drawing.Point(271, 303);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 12);
+            this.label8.Size = new System.Drawing.Size(199, 15);
             this.label8.TabIndex = 19;
-            this.label8.Text = "秒経過で戦闘終了とみなす";
+            this.label8.Text = "초 이상 지났을 시 전투 종료로 간주";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 353);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 12);
+            this.label9.Size = new System.Drawing.Size(83, 15);
             this.label9.TabIndex = 20;
-            this.label9.Text = "クリックスルー";
+            this.label9.Text = "Click-Through";
             // 
             // ClickThroughCheckBox
             // 
             this.ClickThroughCheckBox.AutoSize = true;
-            this.ClickThroughCheckBox.Location = new System.Drawing.Point(163, 352);
+            this.ClickThroughCheckBox.Location = new System.Drawing.Point(190, 352);
             this.ClickThroughCheckBox.Name = "ClickThroughCheckBox";
-            this.ClickThroughCheckBox.Size = new System.Drawing.Size(48, 16);
+            this.ClickThroughCheckBox.Size = new System.Drawing.Size(50, 19);
             this.ClickThroughCheckBox.TabIndex = 10;
-            this.ClickThroughCheckBox.Text = "有効";
+            this.ClickThroughCheckBox.Text = "사용";
             this.ClickThroughCheckBox.UseVisualStyleBackColor = true;
             // 
             // TekiyoButton
             // 
-            this.TekiyoButton.Location = new System.Drawing.Point(401, 408);
+            this.TekiyoButton.Location = new System.Drawing.Point(468, 408);
             this.TekiyoButton.Name = "TekiyoButton";
-            this.TekiyoButton.Size = new System.Drawing.Size(68, 23);
+            this.TekiyoButton.Size = new System.Drawing.Size(79, 23);
             this.TekiyoButton.TabIndex = 12;
-            this.TekiyoButton.Text = "適用";
+            this.TekiyoButton.Text = "적용";
             this.TekiyoButton.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(232, 378);
+            this.label3.Location = new System.Drawing.Point(271, 378);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 12);
+            this.label3.Size = new System.Drawing.Size(23, 15);
             this.label3.TabIndex = 28;
             this.label3.Text = "ms";
             // 
             // MPRefreshRateNumericUpDown
             // 
             this.MPRefreshRateNumericUpDown.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.MPRefreshRateNumericUpDown.Location = new System.Drawing.Point(163, 374);
+            this.MPRefreshRateNumericUpDown.Location = new System.Drawing.Point(190, 374);
             this.MPRefreshRateNumericUpDown.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -247,7 +247,7 @@
             0,
             0});
             this.MPRefreshRateNumericUpDown.Name = "MPRefreshRateNumericUpDown";
-            this.MPRefreshRateNumericUpDown.Size = new System.Drawing.Size(63, 19);
+            this.MPRefreshRateNumericUpDown.Size = new System.Drawing.Size(73, 23);
             this.MPRefreshRateNumericUpDown.TabIndex = 11;
             this.MPRefreshRateNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MPRefreshRateNumericUpDown.Value = new decimal(new int[] {
@@ -261,9 +261,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 378);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 12);
+            this.label10.Size = new System.Drawing.Size(105, 15);
             this.label10.TabIndex = 26;
-            this.label10.Text = "MPの監視間隔";
+            this.label10.Text = "MP 모니터링 간격";
             // 
             // LogRichTextBox
             // 
@@ -271,11 +271,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LogRichTextBox.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.LogRichTextBox.Location = new System.Drawing.Point(5, 441);
+            this.LogRichTextBox.Location = new System.Drawing.Point(6, 441);
             this.LogRichTextBox.Name = "LogRichTextBox";
             this.LogRichTextBox.ReadOnly = true;
             this.LogRichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.LogRichTextBox.Size = new System.Drawing.Size(791, 280);
+            this.LogRichTextBox.Size = new System.Drawing.Size(922, 280);
             this.LogRichTextBox.TabIndex = 14;
             this.LogRichTextBox.TabStop = false;
             this.LogRichTextBox.Text = "";
@@ -287,10 +287,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(5, 7);
+            this.tabControl1.Location = new System.Drawing.Point(6, 7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(791, 241);
+            this.tabControl1.Size = new System.Drawing.Size(923, 241);
             this.tabControl1.TabIndex = 42;
             // 
             // tabPage1
@@ -311,44 +311,63 @@
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.VisualSetting);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(783, 215);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(915, 213);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "MP Timer";
+            this.tabPage1.Text = "MP 타이머";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // EnabledMPTimerCheckBox
+            // 
+            this.EnabledMPTimerCheckBox.AutoSize = true;
+            this.EnabledMPTimerCheckBox.Location = new System.Drawing.Point(195, 12);
+            this.EnabledMPTimerCheckBox.Name = "EnabledMPTimerCheckBox";
+            this.EnabledMPTimerCheckBox.Size = new System.Drawing.Size(50, 19);
+            this.EnabledMPTimerCheckBox.TabIndex = 57;
+            this.EnabledMPTimerCheckBox.Text = "사용";
+            this.EnabledMPTimerCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(7, 13);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(57, 15);
+            this.label25.TabIndex = 56;
+            this.label25.Text = "MP  사용";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 120);
+            this.label15.Location = new System.Drawing.Point(7, 120);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 12);
+            this.label15.Size = new System.Drawing.Size(83, 15);
             this.label15.TabIndex = 55;
-            this.label15.Text = "オーバーレイの位置";
+            this.label15.Text = "오버레이 위치";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(265, 120);
+            this.label14.Location = new System.Drawing.Point(309, 120);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(12, 12);
+            this.label14.Size = new System.Drawing.Size(14, 15);
             this.label14.TabIndex = 54;
             this.label14.Text = "Y";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(164, 120);
+            this.label13.Location = new System.Drawing.Point(191, 120);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(12, 12);
+            this.label13.Size = new System.Drawing.Size(14, 15);
             this.label13.TabIndex = 53;
             this.label13.Text = "X";
             // 
             // OverlayLocationYNumericUpDown
             // 
-            this.OverlayLocationYNumericUpDown.Location = new System.Drawing.Point(283, 118);
+            this.OverlayLocationYNumericUpDown.Location = new System.Drawing.Point(330, 118);
             this.OverlayLocationYNumericUpDown.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -360,7 +379,7 @@
             0,
             -2147483648});
             this.OverlayLocationYNumericUpDown.Name = "OverlayLocationYNumericUpDown";
-            this.OverlayLocationYNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.OverlayLocationYNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.OverlayLocationYNumericUpDown.TabIndex = 44;
             this.OverlayLocationYNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.OverlayLocationYNumericUpDown.Value = new decimal(new int[] {
@@ -371,7 +390,7 @@
             // 
             // OverlayLocationXNumericUpDown
             // 
-            this.OverlayLocationXNumericUpDown.Location = new System.Drawing.Point(182, 118);
+            this.OverlayLocationXNumericUpDown.Location = new System.Drawing.Point(212, 118);
             this.OverlayLocationXNumericUpDown.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -383,7 +402,7 @@
             0,
             -2147483648});
             this.OverlayLocationXNumericUpDown.Name = "OverlayLocationXNumericUpDown";
-            this.OverlayLocationXNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.OverlayLocationXNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.OverlayLocationXNumericUpDown.TabIndex = 43;
             this.OverlayLocationXNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.OverlayLocationXNumericUpDown.Value = new decimal(new int[] {
@@ -395,47 +414,47 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(451, 146);
+            this.label12.Location = new System.Drawing.Point(526, 146);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 12);
+            this.label12.Size = new System.Drawing.Size(59, 15);
             this.label12.TabIndex = 52;
-            this.label12.Text = "色にする";
+            this.label12.Text = "색상 변경";
             // 
             // ProgressBarShiftOutlineColorButton
             // 
-            this.ProgressBarShiftOutlineColorButton.Location = new System.Drawing.Point(392, 140);
+            this.ProgressBarShiftOutlineColorButton.Location = new System.Drawing.Point(457, 140);
             this.ProgressBarShiftOutlineColorButton.Name = "ProgressBarShiftOutlineColorButton";
-            this.ProgressBarShiftOutlineColorButton.Size = new System.Drawing.Size(53, 23);
+            this.ProgressBarShiftOutlineColorButton.Size = new System.Drawing.Size(62, 23);
             this.ProgressBarShiftOutlineColorButton.TabIndex = 47;
-            this.ProgressBarShiftOutlineColorButton.Text = "枠";
+            this.ProgressBarShiftOutlineColorButton.Text = "테두리";
             this.ProgressBarShiftOutlineColorButton.UseVisualStyleBackColor = true;
             // 
             // ProgressBarShiftColorButton
             // 
-            this.ProgressBarShiftColorButton.Location = new System.Drawing.Point(333, 140);
+            this.ProgressBarShiftColorButton.Location = new System.Drawing.Point(388, 140);
             this.ProgressBarShiftColorButton.Name = "ProgressBarShiftColorButton";
-            this.ProgressBarShiftColorButton.Size = new System.Drawing.Size(53, 23);
+            this.ProgressBarShiftColorButton.Size = new System.Drawing.Size(62, 23);
             this.ProgressBarShiftColorButton.TabIndex = 46;
-            this.ProgressBarShiftColorButton.Text = "バー";
+            this.ProgressBarShiftColorButton.Text = "바";
             this.ProgressBarShiftColorButton.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(280, 146);
+            this.label11.Location = new System.Drawing.Point(327, 146);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 12);
+            this.label11.Size = new System.Drawing.Size(59, 15);
             this.label11.TabIndex = 51;
-            this.label11.Text = "秒前から";
+            this.label11.Text = "초 전부터";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 146);
+            this.label2.Location = new System.Drawing.Point(191, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 12);
+            this.label2.Size = new System.Drawing.Size(31, 15);
             this.label2.TabIndex = 50;
-            this.label2.Text = "回復の";
+            this.label2.Text = "회복";
             // 
             // ProgressBarShiftTimeNumericUpDown
             // 
@@ -445,14 +464,14 @@
             0,
             0,
             131072});
-            this.ProgressBarShiftTimeNumericUpDown.Location = new System.Drawing.Point(209, 143);
+            this.ProgressBarShiftTimeNumericUpDown.Location = new System.Drawing.Point(244, 143);
             this.ProgressBarShiftTimeNumericUpDown.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
             this.ProgressBarShiftTimeNumericUpDown.Name = "ProgressBarShiftTimeNumericUpDown";
-            this.ProgressBarShiftTimeNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.ProgressBarShiftTimeNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.ProgressBarShiftTimeNumericUpDown.TabIndex = 45;
             this.ProgressBarShiftTimeNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ProgressBarShiftTimeNumericUpDown.Value = new decimal(new int[] {
@@ -464,11 +483,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 145);
+            this.label1.Location = new System.Drawing.Point(7, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 12);
+            this.label1.Size = new System.Drawing.Size(103, 15);
             this.label1.TabIndex = 49;
-            this.label1.Text = "回復までの秒数で色を変える";
+            this.label1.Text = "회복 전 색상 변경";
             // 
             // VisualSetting
             // 
@@ -478,20 +497,20 @@
             this.VisualSetting.BarSize = new System.Drawing.Size(110, 7);
             this.VisualSetting.FontColor = System.Drawing.Color.LightGoldenrodYellow;
             this.VisualSetting.FontOutlineColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.VisualSetting.Location = new System.Drawing.Point(166, 43);
+            this.VisualSetting.Location = new System.Drawing.Point(194, 43);
             this.VisualSetting.Name = "VisualSetting";
-            this.VisualSetting.Size = new System.Drawing.Size(306, 65);
+            this.VisualSetting.Size = new System.Drawing.Size(357, 65);
             this.VisualSetting.TabIndex = 42;
-            this.VisualSetting.TextFont = new System.Drawing.Font("メイリオ", 9.75F);
+            this.VisualSetting.TextFont = new System.Drawing.Font("Meiryo", 9.75F);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 48);
+            this.label4.Location = new System.Drawing.Point(7, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 12);
+            this.label4.Size = new System.Drawing.Size(107, 15);
             this.label4.TabIndex = 48;
-            this.label4.Text = "オーバーレイの見た目";
+            this.label4.Text = "오버레이 미리보기";
             // 
             // tabPage2
             // 
@@ -513,60 +532,79 @@
             this.tabPage2.Controls.Add(this.label22);
             this.tabPage2.Controls.Add(this.EnochianVisualSetting);
             this.tabPage2.Controls.Add(this.label23);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(783, 215);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(915, 213);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Enochian Timer";
+            this.tabPage2.Text = "천사의 언어 타이머";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // EnabledEnochianTimerCheckBox
+            // 
+            this.EnabledEnochianTimerCheckBox.AutoSize = true;
+            this.EnabledEnochianTimerCheckBox.Location = new System.Drawing.Point(195, 12);
+            this.EnabledEnochianTimerCheckBox.Name = "EnabledEnochianTimerCheckBox";
+            this.EnabledEnochianTimerCheckBox.Size = new System.Drawing.Size(50, 19);
+            this.EnabledEnochianTimerCheckBox.TabIndex = 73;
+            this.EnabledEnochianTimerCheckBox.Text = "사용";
+            this.EnabledEnochianTimerCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(7, 13);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(139, 15);
+            this.label26.TabIndex = 72;
+            this.label26.Text = "천사의 언어 타이머 사용";
             // 
             // EnochianLabelTextBox
             // 
-            this.EnochianLabelTextBox.Location = new System.Drawing.Point(166, 175);
+            this.EnochianLabelTextBox.Location = new System.Drawing.Point(194, 175);
             this.EnochianLabelTextBox.Name = "EnochianLabelTextBox";
-            this.EnochianLabelTextBox.Size = new System.Drawing.Size(182, 19);
+            this.EnochianLabelTextBox.Size = new System.Drawing.Size(212, 23);
             this.EnochianLabelTextBox.TabIndex = 71;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 178);
+            this.label24.Location = new System.Drawing.Point(7, 178);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(33, 12);
+            this.label24.Size = new System.Drawing.Size(31, 15);
             this.label24.TabIndex = 70;
-            this.label24.Text = "ラベル";
+            this.label24.Text = "라벨";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 120);
+            this.label16.Location = new System.Drawing.Point(7, 120);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 12);
+            this.label16.Size = new System.Drawing.Size(83, 15);
             this.label16.TabIndex = 69;
-            this.label16.Text = "オーバーレイの位置";
+            this.label16.Text = "오버레이 위치";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(265, 120);
+            this.label17.Location = new System.Drawing.Point(309, 120);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(12, 12);
+            this.label17.Size = new System.Drawing.Size(14, 15);
             this.label17.TabIndex = 68;
             this.label17.Text = "Y";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(164, 120);
+            this.label18.Location = new System.Drawing.Point(191, 120);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(12, 12);
+            this.label18.Size = new System.Drawing.Size(14, 15);
             this.label18.TabIndex = 67;
             this.label18.Text = "X";
             // 
             // EnochianYNumericUpDown
             // 
-            this.EnochianYNumericUpDown.Location = new System.Drawing.Point(283, 118);
+            this.EnochianYNumericUpDown.Location = new System.Drawing.Point(330, 118);
             this.EnochianYNumericUpDown.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -578,7 +616,7 @@
             0,
             -2147483648});
             this.EnochianYNumericUpDown.Name = "EnochianYNumericUpDown";
-            this.EnochianYNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.EnochianYNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.EnochianYNumericUpDown.TabIndex = 58;
             this.EnochianYNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.EnochianYNumericUpDown.Value = new decimal(new int[] {
@@ -589,7 +627,7 @@
             // 
             // EnochianXNumericUpDown
             // 
-            this.EnochianXNumericUpDown.Location = new System.Drawing.Point(182, 118);
+            this.EnochianXNumericUpDown.Location = new System.Drawing.Point(212, 118);
             this.EnochianXNumericUpDown.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -601,7 +639,7 @@
             0,
             -2147483648});
             this.EnochianXNumericUpDown.Name = "EnochianXNumericUpDown";
-            this.EnochianXNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.EnochianXNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.EnochianXNumericUpDown.TabIndex = 57;
             this.EnochianXNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.EnochianXNumericUpDown.Value = new decimal(new int[] {
@@ -613,47 +651,47 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(451, 146);
+            this.label19.Location = new System.Drawing.Point(526, 146);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(45, 12);
+            this.label19.Size = new System.Drawing.Size(59, 15);
             this.label19.TabIndex = 66;
-            this.label19.Text = "色にする";
+            this.label19.Text = "색상 변경";
             // 
             // EnochianBarShiftOutlineColorButton
             // 
-            this.EnochianBarShiftOutlineColorButton.Location = new System.Drawing.Point(392, 140);
+            this.EnochianBarShiftOutlineColorButton.Location = new System.Drawing.Point(457, 140);
             this.EnochianBarShiftOutlineColorButton.Name = "EnochianBarShiftOutlineColorButton";
-            this.EnochianBarShiftOutlineColorButton.Size = new System.Drawing.Size(53, 23);
+            this.EnochianBarShiftOutlineColorButton.Size = new System.Drawing.Size(62, 23);
             this.EnochianBarShiftOutlineColorButton.TabIndex = 61;
-            this.EnochianBarShiftOutlineColorButton.Text = "枠";
+            this.EnochianBarShiftOutlineColorButton.Text = "테두리";
             this.EnochianBarShiftOutlineColorButton.UseVisualStyleBackColor = true;
             // 
             // EnochianBarShiftColorButton
             // 
-            this.EnochianBarShiftColorButton.Location = new System.Drawing.Point(333, 140);
+            this.EnochianBarShiftColorButton.Location = new System.Drawing.Point(388, 140);
             this.EnochianBarShiftColorButton.Name = "EnochianBarShiftColorButton";
-            this.EnochianBarShiftColorButton.Size = new System.Drawing.Size(53, 23);
+            this.EnochianBarShiftColorButton.Size = new System.Drawing.Size(62, 23);
             this.EnochianBarShiftColorButton.TabIndex = 60;
-            this.EnochianBarShiftColorButton.Text = "バー";
+            this.EnochianBarShiftColorButton.Text = "바";
             this.EnochianBarShiftColorButton.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(280, 146);
+            this.label20.Location = new System.Drawing.Point(327, 146);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 12);
+            this.label20.Size = new System.Drawing.Size(59, 15);
             this.label20.TabIndex = 65;
-            this.label20.Text = "秒前から";
+            this.label20.Text = "초 전부터";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(164, 146);
+            this.label21.Location = new System.Drawing.Point(191, 146);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(39, 12);
+            this.label21.Size = new System.Drawing.Size(43, 15);
             this.label21.TabIndex = 64;
-            this.label21.Text = "終了の";
+            this.label21.Text = "끝나기";
             // 
             // EnochianBarShiftNumericUpDown
             // 
@@ -663,14 +701,14 @@
             0,
             0,
             131072});
-            this.EnochianBarShiftNumericUpDown.Location = new System.Drawing.Point(209, 143);
+            this.EnochianBarShiftNumericUpDown.Location = new System.Drawing.Point(244, 143);
             this.EnochianBarShiftNumericUpDown.Maximum = new decimal(new int[] {
             30,
             0,
             0,
             0});
             this.EnochianBarShiftNumericUpDown.Name = "EnochianBarShiftNumericUpDown";
-            this.EnochianBarShiftNumericUpDown.Size = new System.Drawing.Size(65, 19);
+            this.EnochianBarShiftNumericUpDown.Size = new System.Drawing.Size(76, 23);
             this.EnochianBarShiftNumericUpDown.TabIndex = 59;
             this.EnochianBarShiftNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.EnochianBarShiftNumericUpDown.Value = new decimal(new int[] {
@@ -682,11 +720,11 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 145);
+            this.label22.Location = new System.Drawing.Point(7, 145);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(110, 12);
+            this.label22.Size = new System.Drawing.Size(103, 15);
             this.label22.TabIndex = 63;
-            this.label22.Text = "残り秒数で色を変える";
+            this.label22.Text = "종료 전 색상 변경";
             // 
             // EnochianVisualSetting
             // 
@@ -696,62 +734,24 @@
             this.EnochianVisualSetting.BarSize = new System.Drawing.Size(110, 7);
             this.EnochianVisualSetting.FontColor = System.Drawing.Color.LightGoldenrodYellow;
             this.EnochianVisualSetting.FontOutlineColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.EnochianVisualSetting.Location = new System.Drawing.Point(166, 43);
+            this.EnochianVisualSetting.Location = new System.Drawing.Point(194, 43);
             this.EnochianVisualSetting.Name = "EnochianVisualSetting";
-            this.EnochianVisualSetting.Size = new System.Drawing.Size(306, 65);
+            this.EnochianVisualSetting.Size = new System.Drawing.Size(357, 65);
             this.EnochianVisualSetting.TabIndex = 56;
-            this.EnochianVisualSetting.TextFont = new System.Drawing.Font("メイリオ", 9.75F);
+            this.EnochianVisualSetting.TextFont = new System.Drawing.Font("Meiryo", 9.75F);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 48);
+            this.label23.Location = new System.Drawing.Point(7, 48);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(105, 12);
+            this.label23.Size = new System.Drawing.Size(107, 15);
             this.label23.TabIndex = 62;
-            this.label23.Text = "オーバーレイの見た目";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 13);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(106, 12);
-            this.label25.TabIndex = 56;
-            this.label25.Text = "MP Timerを使用する";
-            // 
-            // EnabledMPTimerCheckBox
-            // 
-            this.EnabledMPTimerCheckBox.AutoSize = true;
-            this.EnabledMPTimerCheckBox.Location = new System.Drawing.Point(167, 12);
-            this.EnabledMPTimerCheckBox.Name = "EnabledMPTimerCheckBox";
-            this.EnabledMPTimerCheckBox.Size = new System.Drawing.Size(48, 16);
-            this.EnabledMPTimerCheckBox.TabIndex = 57;
-            this.EnabledMPTimerCheckBox.Text = "有効";
-            this.EnabledMPTimerCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // EnabledEnochianTimerCheckBox
-            // 
-            this.EnabledEnochianTimerCheckBox.AutoSize = true;
-            this.EnabledEnochianTimerCheckBox.Location = new System.Drawing.Point(167, 12);
-            this.EnabledEnochianTimerCheckBox.Name = "EnabledEnochianTimerCheckBox";
-            this.EnabledEnochianTimerCheckBox.Size = new System.Drawing.Size(48, 16);
-            this.EnabledEnochianTimerCheckBox.TabIndex = 73;
-            this.EnabledEnochianTimerCheckBox.Text = "有効";
-            this.EnabledEnochianTimerCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(6, 13);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(136, 12);
-            this.label26.TabIndex = 72;
-            this.label26.Text = "Enochian Timerを使用する";
+            this.label23.Text = "오버레이 미리보기";
             // 
             // ConfigPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label3);
@@ -770,8 +770,9 @@
             this.Controls.Add(this.TokaRitsuNumericUpDown);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.LogRichTextBox);
+            this.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "ConfigPanel";
-            this.Size = new System.Drawing.Size(799, 724);
+            this.Size = new System.Drawing.Size(932, 724);
             this.Load += new System.EventHandler(this.ConfigPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TokaRitsuNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountInCombatNumericUpDown)).EndInit();

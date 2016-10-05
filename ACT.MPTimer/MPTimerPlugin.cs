@@ -61,7 +61,7 @@
             catch (Exception ex)
             {
                 Trace.WriteLine(
-                    "ACT.MPTimer プラグインの初期化で例外が発生しました。" + Environment.NewLine +
+                    "ACT.MPTimer 플러그인 초기화 도중 에러가 발생했습니다." + Environment.NewLine +
                     ex.ToString());
             }
             finally
@@ -95,7 +95,7 @@
             catch (Exception ex)
             {
                 Trace.WriteLine(
-                    "ACT.MPTimer プラグインの終了で例外が発生しました。" + Environment.NewLine +
+                    "ACT.MPTimer 플러그인 종료 도중 에러가 발생했습니다." + Environment.NewLine +
                     ex.ToString());
             }
             finally

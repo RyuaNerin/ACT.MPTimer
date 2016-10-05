@@ -16,7 +16,7 @@
         /// <summary>
         /// 最終リリースのURL
         /// </summary>
-        public const string LastestReleaseUrl = @"https://github.com/anoyetta/ACT.MPTimer/releases/latest";
+        public const string LastestReleaseUrl = @"https://github.com/RyuaNerin/ACT.MPTimer/releases/latest";
 
         /// <summary>
         /// 製品名
@@ -93,11 +93,11 @@
                 }
 
                 var prompt = string.Empty;
-                prompt += ProductName + " の新しいバージョンがリリースされています。" + Environment.NewLine;
+                prompt += ProductName + " 의 새로운 버전이 릴리즈 되었습니다." + Environment.NewLine;
                 prompt += "now: " + "v" + currentVersion.Major.ToString() + "." + currentVersion.Minor.ToString() + "." + currentVersion.Revision.ToString() + Environment.NewLine;
                 prompt += "new: " + lastestReleaseVersion + Environment.NewLine;
                 prompt += Environment.NewLine;
-                prompt += "ダウンロードしますか？";
+                prompt += "다운로드 하시겠습니까?";
 
                 if (MessageBox.Show(prompt, ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) !=
                     DialogResult.Yes)
@@ -109,7 +109,7 @@
             }
             catch (Exception ex)
             {
-                r = "アップデートの確認で例外が発生しました。" + ex.ToString();
+                r = "업데이트 확인중 에러가 발생했습니다." + ex.ToString();
             }
 
             return r;

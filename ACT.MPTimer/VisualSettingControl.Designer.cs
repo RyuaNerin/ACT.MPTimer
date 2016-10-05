@@ -85,31 +85,31 @@
             // 
             this.ChangeFontItem.Name = "ChangeFontItem";
             this.ChangeFontItem.Size = new System.Drawing.Size(286, 22);
-            this.ChangeFontItem.Text = "フォントを変更する";
+            this.ChangeFontItem.Text = "글꼴 변경";
             // 
             // ChangeFontColorItem
             // 
             this.ChangeFontColorItem.Name = "ChangeFontColorItem";
             this.ChangeFontColorItem.Size = new System.Drawing.Size(286, 22);
-            this.ChangeFontColorItem.Text = "フォントの色を変更する";
+            this.ChangeFontColorItem.Text = "글꼴 색상 변경";
             // 
             // ChangeFontOutlineColorItem
             // 
             this.ChangeFontOutlineColorItem.Name = "ChangeFontOutlineColorItem";
             this.ChangeFontOutlineColorItem.Size = new System.Drawing.Size(286, 22);
-            this.ChangeFontOutlineColorItem.Text = "フォントのアウトラインの色を変更する";
+            this.ChangeFontOutlineColorItem.Text = "글꼴 외각선 색 변경";
             // 
             // ChangeBarColorItem
             // 
             this.ChangeBarColorItem.Name = "ChangeBarColorItem";
             this.ChangeBarColorItem.Size = new System.Drawing.Size(286, 22);
-            this.ChangeBarColorItem.Text = "バーの色を変更する";
+            this.ChangeBarColorItem.Text = "바 색상 변경";
             // 
             // ChangeBarOutlineColorItem
             // 
             this.ChangeBarOutlineColorItem.Name = "ChangeBarOutlineColorItem";
             this.ChangeBarOutlineColorItem.Size = new System.Drawing.Size(286, 22);
-            this.ChangeBarOutlineColorItem.Text = "バーのアウトラインの色を変更する";
+            this.ChangeBarOutlineColorItem.Text = "바 외각선 색 변경";
             // 
             // toolStripSeparator1
             // 
@@ -120,23 +120,23 @@
             // 
             this.SaveColorSetItem.Name = "SaveColorSetItem";
             this.SaveColorSetItem.Size = new System.Drawing.Size(286, 22);
-            this.SaveColorSetItem.Text = "配色を保存する";
+            this.SaveColorSetItem.Text = "색 구성표 저장";
             // 
             // LoadColorSetItem
             // 
             this.LoadColorSetItem.Name = "LoadColorSetItem";
             this.LoadColorSetItem.Size = new System.Drawing.Size(286, 22);
-            this.LoadColorSetItem.Text = "配色を読み込む";
+            this.LoadColorSetItem.Text = "색 구성표 불러오기";
             // 
             // BarSizeLabel
             // 
             this.BarSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BarSizeLabel.AutoSize = true;
-            this.BarSizeLabel.Location = new System.Drawing.Point(110, 62);
+            this.BarSizeLabel.Location = new System.Drawing.Point(130, 62);
             this.BarSizeLabel.Name = "BarSizeLabel";
             this.BarSizeLabel.Size = new System.Drawing.Size(64, 12);
             this.BarSizeLabel.TabIndex = 2;
-            this.BarSizeLabel.Text = "バーのサイズ";
+            this.BarSizeLabel.Text = "바 크기";
             // 
             // WidthNumericUpDown
             // 
@@ -205,18 +205,18 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 12);
             this.label3.TabIndex = 6;
-            this.label3.Text = "※右クリックで変更";
+            this.label3.Text = "※ 마우스 우클릭으로 변경";
             // 
             // SaveFileDialog
             // 
             this.SaveFileDialog.DefaultExt = "xml";
-            this.SaveFileDialog.Filter = "XMLファイル (*.xml)|*.xml|全てのファイル (*.*)|*.*";
+            this.SaveFileDialog.Filter = "XML 파일 (*.xml)|*.xml|모든 파일 (*.*)|*.*";
             this.SaveFileDialog.RestoreDirectory = true;
             // 
             // OpenFileDialog
             // 
             this.OpenFileDialog.DefaultExt = "xml";
-            this.OpenFileDialog.Filter = "XMLファイル (*.xml)|*.xml|全てのファイル (*.*)|*.*";
+            this.OpenFileDialog.Filter = "XML 파일 (*.xml)|*.xml|모든 파일 (*.*)|*.*";
             this.OpenFileDialog.RestoreDirectory = true;
             // 
             // VisualSettingControl

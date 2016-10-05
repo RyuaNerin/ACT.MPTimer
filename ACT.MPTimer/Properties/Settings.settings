@@ -9,7 +9,7 @@
       <Value Profile="(Default)">OrangeRed</Value>
     </Setting>
     <Setting Name="Font" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">メイリオ, 9.75pt</Value>
+      <Value Profile="(Default)">나눔고딕, 9.75pt</Value>
     </Setting>
     <Setting Name="OverlayLeft" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
@@ -63,7 +63,7 @@
       <Value Profile="(Default)">OrangeRed</Value>
     </Setting>
     <Setting Name="EnochianFont" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">メイリオ, 9.75pt</Value>
+      <Value Profile="(Default)">나눔고딕, 9.75pt</Value>
     </Setting>
     <Setting Name="EnochianOverlayLeft" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
@@ -93,7 +93,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="EnochianLabel" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Enochian</Value>
+      <Value Profile="(Default)">천사의 언어</Value>
     </Setting>
     <Setting Name="EnabledMPTimer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

@@ -1,12 +1,12 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("ACT.MPTimer")]
-[assembly: AssemblyDescription("https://github.com/anoyetta/ACT.MPTimer")]
+[assembly: AssemblyTitle("ACT.MPTimer KR")]
+[assembly: AssemblyDescription("https://github.com/RyuaNerin/ACT.MPTimer")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("anoyetta")]
-[assembly: AssemblyProduct("ACT.MPTimer")]
-[assembly: AssemblyCopyright("Copyright (c) 2014-2015, anoyetta")]
+[assembly: AssemblyCompany("anoyetta. translated by RyuaNerin")]
+[assembly: AssemblyProduct("ACT.MPTimer KR")]
+[assembly: AssemblyCopyright("Copyright (c) 2014-2015, anoyetta. translated by RyuaNerin")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

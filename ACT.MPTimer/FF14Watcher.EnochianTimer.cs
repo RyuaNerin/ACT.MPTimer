@@ -3,9 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
+    using System.Text.RegularExpressions;
     using System.Threading;
     using System.Threading.Tasks;
-
     using ACT.MPTimer.Properties;
     using ACT.MPTimer.Utility;
     using Advanced_Combat_Tracker;
@@ -41,11 +41,6 @@
         private bool inUmbralIce;
 
         /// <summary>
-        /// エノキアンの更新回数
-        /// </summary>
-        private long updateEnchianCount;
-
-        /// <summary>
         /// ログキュー
         /// </summary>
         private Queue<string> logQueue = new Queue<string>();
@@ -60,10 +55,38 @@
         /// </summary>
         private bool enochianTimerStop;
 
+        private string _playerName;
         /// <summary>
         /// プレイヤーの名前
         /// </summary>
-        private string playerName;
+        private string playerName
+        {
+            get
+            {
+                return _playerName;
+            }
+            set
+            {
+                this._playerName = value;
+
+                int i = 0;
+                this.machingTextToEnochianOn = new string[EnochianOn.Length];
+                for (i = 0; i < EnochianOn.Length; ++i)
+                    this.machingTextToEnochianOn[i] = string.Format(EnochianOn[i], value);
+
+                this.machingTextToEnochianOff = new string[EnochianOff.Length];
+                for (i = 0; i < EnochianOff.Length; ++i)
+                    this.machingTextToEnochianOff[i] = string.Format(EnochianOff[i], value);
+
+                this.machingTextToUmbralIceOn = new string[UmbralIceOn.Length];
+                for (i = 0; i < UmbralIceOn.Length; ++i)
+                    this.machingTextToUmbralIceOn[i] = string.Format(UmbralIceOn[i], value);
+
+                this.machingTextToUmbralIceOff = new string[UmbralIceOff.Length];
+                for (i = 0; i < UmbralIceOff.Length; ++i)
+                    this.machingTextToUmbralIceOff[i] = string.Format(UmbralIceOff[i], value);
+            }
+        }
 
         /// <summary>
         /// エノキアンの更新猶予期間
@@ -224,6 +247,33 @@
                 }
             }
         }
+        
+        private static readonly string[] EnochianOn =
+        {
+            "{0} gains the effect of 천사의 언어 from {0} for ([0-9\\.]+) Seconds",
+            "{0} gains the effect of Enochian from {0} for ([0-9\\.]+) Seconds"
+        };
+
+        private static readonly string[] EnochianOff =
+        {
+            "{0} loses the effect of 천사의 언어",
+            "{0} loses the effect of Enochian"
+        };
+        private static readonly string[] UmbralIceOn =
+        {
+            "{0} gains the effect of 저승의 냉기",
+            "{0} gains the effect of Umbral Ice",
+        };
+        private static readonly string[] UmbralIceOff =
+        {
+            "{0} loses the effect of 저승의 냉기",
+            "{0} loses the effect of Umbral Ice",
+        };
+
+        private string[] machingTextToEnochianOn;
+        private string[] machingTextToEnochianOff;
+        private string[] machingTextToUmbralIceOn;
+        private string[] machingTextToUmbralIceOff;
 
         /// <summary>
         /// エノキアンタイマー向けにログを分析する
@@ -255,118 +305,15 @@
                 return;
             }
 
-            // イニシャル版のプレイヤー名を生成する
-            var names = this.playerName.Split(' ');
-            var firstName = names.Length > 0 ? names[0].Trim() : string.Empty;
-            var familyName = names.Length > 1 ? names[1].Trim() : string.Empty;
-
-            var playerNameSaL = 
-                firstName.Substring(0, 1) + "." + 
-                " " + 
-                familyName;
-
-            var playerNameLaS = 
-                firstName + 
-                " " + 
-                familyName.Substring(0, 1) + ".";
-
-            var playerNameSaS = 
-                firstName.Substring(0, 1) + "." + 
-                " " + 
-                familyName.Substring(0, 1) + ".";
-
-            // 各種マッチング用の文字列を生成する
-            var machingTextToEnochianOn = new string[]
-            {
-                this.playerName + "の「エノキアン」",
-                playerNameSaL + "の「エノキアン」",
-                playerNameLaS + "の「エノキアン」",
-                playerNameSaS + "の「エノキアン」",
-                "You use Enochian.",
-                "Vous utilisez Énochien.",
-                "Du setzt Henochisch ein.",
-            };
-
-            var machingTextToEnochianOff = new string[]
-            {
-                this.playerName + "の「エノキアン」が切れた。",
-                playerNameSaL + "の「エノキアン」が切れた。",
-                playerNameLaS + "の「エノキアン」が切れた。",
-                playerNameSaS + "の「エノキアン」が切れた。",
-                "You lose the effect of Enochian.",
-                "Vous perdez l'effet Énochien.",
-                "Du verlierst den Effekt von Henochisch.",
-            };
-
-            var machingTextToUmbralIceOn = new string[]
-            {
-                this.playerName + "に「アンブラルブリザード」の効果。",
-                this.playerName + "に「アンブラルブリザードII」の効果。",
-                this.playerName + "に「アンブラルブリザードIII」の効果。",
-                playerNameSaL + "に「アンブラルブリザード」の効果。",
-                playerNameSaL + "に「アンブラルブリザードII」の効果。",
-                playerNameSaL + "に「アンブラルブリザードIII」の効果。",
-                playerNameLaS + "に「アンブラルブリザード」の効果。",
-                playerNameLaS + "に「アンブラルブリザードII」の効果。",
-                playerNameLaS + "に「アンブラルブリザードIII」の効果。",
-                playerNameSaS + "に「アンブラルブリザード」の効果。",
-                playerNameSaS + "に「アンブラルブリザードII」の効果。",
-                playerNameSaS + "に「アンブラルブリザードIII」の効果。",
-                "You gain the effect of Umbral Ice.",
-                "You gain the effect of Umbral Ice II.",
-                "You gain the effect of Umbral Ice III.",
-                "Vous bénéficiez de l'effet Glace ombrale.",
-                "Vous bénéficiez de l'effet Glace ombrale II.",
-                "Vous bénéficiez de l'effet Glace ombrale III.",
-                "Du erhältst den Effekt von Schatteneis.",
-                "Du erhältst den Effekt von Schatteneis II.",
-                "Du erhältst den Effekt von Schatteneis III.",
-            };
-
-            var machingTextToUmbralIceOff = new string[]
-            {
-                this.playerName + "の「アンブラルブリザード」が切れた。",
-                this.playerName + "の「アンブラルブリザードII」が切れた。",
-                this.playerName + "の「アンブラルブリザードIII」が切れた。",
-                playerNameSaL + "の「アンブラルブリザード」が切れた。",
-                playerNameSaL + "の「アンブラルブリザードII」が切れた。",
-                playerNameSaL + "の「アンブラルブリザードIII」が切れた。",
-                playerNameLaS + "の「アンブラルブリザード」が切れた。",
-                playerNameLaS + "の「アンブラルブリザードII」が切れた。",
-                playerNameLaS + "の「アンブラルブリザードIII」が切れた。",
-                playerNameSaS + "の「アンブラルブリザード」が切れた。",
-                playerNameSaS + "の「アンブラルブリザードII」が切れた。",
-                playerNameSaS + "の「アンブラルブリザードIII」が切れた。",
-                "You lose the effect of Umbral Ice.",
-                "You lose the effect of Umbral Ice II.",
-                "You lose the effect of Umbral Ice III.",
-                "Vous perdez l'effet Glace ombrale.",
-                "Vous perdez l'effet Glace ombrale II.",
-                "Vous perdez l'effet Glace ombrale III.",
-                "Du verlierst den Effekt von Schatteneis.",
-                "Du verlierst den Effekt von Schatteneis II.",
-                "Du verlierst den Effekt von Schatteneis III.",
-            };
-
-            var machingTextToBlizzard4 = new string[]
-            {
-                this.playerName + "の「ブリザジャ」",
-                playerNameSaL + "の「ブリザジャ」",
-                playerNameLaS + "の「ブリザジャ」",
-                playerNameSaS + "の「ブリザジャ」",
-                "You cast Blizzard IV.",
-                "Vous lancez Giga Glace.",
-                "Du wirkst Eiska.",
-            };
-
             // エノキアンON？
+            Match m;
             foreach (var text in machingTextToEnochianOn)
             {
-                if (log.EndsWith(text))
+                m = Regex.Match(log, text);
+                if (m.Success)
                 {
                     this.inEnochian = true;
-                    this.updateEnchianCount = 0;
-                    this.UpdateEnochian(log);
+                    this.UpdateEnochian(double.Parse(m.Groups[1].Value), log);
                     this.lastRemainingTimeOfEnochian = string.Empty;
 
                     Trace.WriteLine("Enochian On. -> " + log);
@@ -394,7 +341,6 @@
                             if (!this.updatedDuringGrace)
                             {
                                 this.inEnochian = false;
-                                this.updateEnchianCount = 0;
                                 Trace.WriteLine("Enochian Off. -> " + log);
                             }
 
@@ -403,7 +349,6 @@
                         }
 
                         this.inEnochian = false;
-                        this.updateEnchianCount = 0;
                         Trace.WriteLine("Enochian Off. -> " + log);
                     });
 
@@ -439,41 +384,19 @@
                     return;
                 }
             }
-
-            // ブリザジャ？
-            foreach (var text in machingTextToBlizzard4)
-            {
-                if (log.EndsWith(text))
-                {
-                    if (this.inEnochian &&
-                        this.inUmbralIce)
-                    {
-                        // 猶予期間中？
-                        if (this.inGraceToUpdate)
-                        {
-                            this.updatedDuringGrace = true;
-                        }
-
-                        this.updateEnchianCount++;
-                        this.UpdateEnochian(log);
-                    }
-
-                    return;
-                }
-            }
         }
 
         /// <summary>
         /// エノキアンの効果時間を更新する
         /// </summary>
         private void UpdateEnochian(
+            double duration,
             string log)
         {
             var vm = EnochianTimerWindow.Default.ViewModel;
 
             vm.StartDateTime = DateTime.Now;
 
-            var duration = EnochianDuration - (EnochianDegradationSecondsExtending * this.updateEnchianCount);
             vm.EndScheduledDateTime = vm.StartDateTime.AddSeconds(duration);
 
             // ACTにログを発生させる

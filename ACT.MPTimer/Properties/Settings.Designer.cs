@@ -12,7 +12,7 @@ namespace ACT.MPTimer.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -49,7 +49,7 @@ namespace ACT.MPTimer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("メイリオ, 9.75pt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("나눔고딕, 9.75pt")]
         public global::System.Drawing.Font Font {
             get {
                 return ((global::System.Drawing.Font)(this["Font"]));
@@ -265,7 +265,7 @@ namespace ACT.MPTimer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("メイリオ, 9.75pt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("나눔고딕, 9.75pt")]
         public global::System.Drawing.Font EnochianFont {
             get {
                 return ((global::System.Drawing.Font)(this["EnochianFont"]));
@@ -385,7 +385,7 @@ namespace ACT.MPTimer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Enochian")]
+        [global::System.Configuration.DefaultSettingValueAttribute("천사의 언어")]
         public string EnochianLabel {
             get {
                 return ((string)(this["EnochianLabel"]));
