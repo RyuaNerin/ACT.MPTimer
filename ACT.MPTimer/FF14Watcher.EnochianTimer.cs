@@ -221,6 +221,7 @@
                     }
 
                     // エノキアンの残り秒数をログとして発生させる
+                    /*
                     if (vm.EndScheduledDateTime >= DateTime.MinValue)
                     {
                         var remainSeconds = (vm.EndScheduledDateTime - DateTime.Now).TotalSeconds;
@@ -234,6 +235,7 @@
                             }
                         }
                     }
+                    */
 
                     Thread.Sleep(Settings.Default.ParameterRefreshRate / 2);
                 }
