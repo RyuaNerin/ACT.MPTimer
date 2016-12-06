@@ -109,7 +109,8 @@
                     // ACTが表示されていなければ何もしない
                     if (!ActGlobals.oFormActMain.Visible)
                     {
-                        return;
+                        Thread.Sleep(5 * 1000);
+                        continue;
                     }
 
                     // FF14Processがなければ何もしない
@@ -118,7 +119,8 @@
                         if (FF14PluginHelper.GetFFXIVProcess == null)
                         {
 #if !DEBUG
-                            return;
+                            Thread.Sleep(5 * 1000);
+                            continue;
 #endif
                         }
 

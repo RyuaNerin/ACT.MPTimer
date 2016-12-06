@@ -178,9 +178,9 @@
                     var vm = EnochianTimerWindow.Default.ViewModel;
 
                     // プレイヤー名を保存する
-                    if (string.IsNullOrWhiteSpace(this.playerName))
+                    if (this.LastPlayerInfo != null)
                     {
-                        if (this.LastPlayerInfo != null)
+                        if (this.playerName != this.LastPlayerInfo.Name)
                         {
                             this.playerName = this.LastPlayerInfo.Name;
                             Trace.WriteLine("Player name is " + this.playerName);
